@@ -2,11 +2,11 @@ import os
 from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/webapp-s2i")
 def main():
     return "Welcome!"
 
-@app.route('/how are you')
+@app.route('/webapp-s2i/how are you')
 def hello():
     return 'I am good, how about you?'
 
